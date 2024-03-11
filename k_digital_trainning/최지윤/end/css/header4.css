@@ -1,0 +1,40 @@
+.wrap {
+  border: 1px solid gray;
+  overflow: hidden;
+  padding: 1%;
+}
+.hdmw {
+  border: 1px solid gray;
+  max-width: 1200px;
+  width: calc(100% -4rem);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  position: relative;
+}
+.logo {
+  border: 1px solid rgb(219, 219, 219);
+  padding: 1rem 0;
+  width: 120px;
+}
+.gnb {
+  border: 1px solid rgb(255, 0, 0);
+  display: flex;
+  text-align: center;
+}
+
+/* .gnb > li {
+} */
+.sub1 {
+  border: 1px solid rgb(0, 255, 64);
+}
+.sub2 {
+  border: 1px solid rgb(0, 140, 255);
+}
+.sub3 {
+  border: 1px solid rgb(212, 0, 255);
+}
+.func {
+  border: 1px solid rgb(255, 0, 0);
+}

@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* root 변수 만들기 >  아래 16px인건 모두 해당) */
+  --gap1: 16px;
+  --point-c1: #e1f6ef;
+  --point-c2: #008656;
+  --pintt-c3: #000000;
+  --point-c4: #ffffff;
+}
+.banner2 {
+  background-color: var(--point-c1);
+  border: 1px solid var(--point-c1);
+  border-radius: var(--gap1);
+  /* var를 쓰면 변수가 자동 사용됨(일일히 지정x)*/
+  /* min-width: 400px; */
+  /* 이게 없으면 최소이하로 안줄여지기 때문에 스크롤이 생기고 칸이 깨지지않음 */
+  max-width: 600px;
+  width: calc(100% - 32px);
+  margin: 100px auto;
+  /* margin 바깥여백 / 위아래 . 오토 */
+  height: auto;
+  padding: calc(var(--gap1) * 2);
+  position: relative;
+  /*이거를 안주면 그림이 바깥 창에 붙어버림 */
+  top: 0;
+  transition: 0.3s;
+}
+.checkpictuere {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 20%;
+  transform: translateY(-50%);
+  /*  수직수평을 기준점으로 항상 가운데 붙어있는법 일단 탑을50%로설정(가운데) 그다음에 가변적이될수있도록 translate를 줌 translate는 자신이 갖고있는 사이즈의 절반을 기준으로 움직임(퍼센트사용시)- */
+  /* width의 부모에 대해서 퍼센트로 크기를 변경함(가변적) - 부모는 배너border */
+}
+.categori {
+  color: var(--point-c2);
+  font-weight: bold;
+}
+.mainheader {
+  padding: var(--gap1) 0;
+  width: 80%;
+}
+
+.banner2 a {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50px;
+  padding: 12px 20px;
+  line-height: 100%;
+  margin-right: 16px;
+  margin-bottom: 10px;
+  /* margin-right 박스 바깥의 오른쪽을 띄움 */
+  transition: 0.3s;
+  position: relative;
+  /* 포지션이 없을경우 화살표는 따로 만들었기때문에 포지션요소가 없는 a는 뛰어넘어 배너로 가서 붙음. 절대적인것으로 할경우 원래 조정했던것이 다 날아가기때문에 현재로 만들어둠 */
+  /* box-sizing: border-box; */
+  border: 1px solid white;
+  font-weight: 700;
+  line-height: 행간 /* align-items: center; */
+    /* 컨테이너(a)를 묶어서 인라인 또는 블럭요소로 사용 */
+    /* cursor: pointer; */ /* font-size: 16px; */ /* width: 100%; */ max-width
+    40%;
+  margin-top: 5px;
+  /* 클래스 안만들고 선택하는법 : .banner2 a {} 이런식으로 class-.banner2 하위에 있는a태그 이런식 */
+  /* text-decoration:none을 하면 링크 밑줄이 따로 안보임 */
+  /* hover > 마우스를 올렸을떄 변경되는거 */
+}
+.banner2 a:hover {
+  background-color: var(--point-c2);
+  color: var(--point-c4);
+  /* transition -> 자연스럽게 변경되도록하는거 */
+}
+/* .banner2 a::before {
+  content: "\f061;
+  font-family: "font awesome 6 free";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+} */
+/* translate+ top은 중앙정렬이됨 */
+
+/* a에 포지션이 없을 경우 배너에 가서 붙음 (화살표없었을때 > 로만든 화살표) */
+
+.banner2:hover {
+  top: -50px;
+  box-shadow: 5px 5px 5px 5px gainsboro;
+}
+/* 중간지점에 호버를 할 경우에는덜덜떨리는 경우가 생김. 그 경우에는 더 큰 레이어를 잡아서 그쪽에 같이 들어갔을때도 올라갈 수 있도록 지정 */
+.c1 {
+  color: blueviolet;
+  font-size: 2em;
+}
+
+@media (min-width: 1000px) and (max-width: 400px) {
+  .banner2 img {
+    transform: translateY(0);
+    top: auto;
+    bottom: 16px;
+    right: 16px;
+    width: 30%;
+  }
+}

@@ -1,0 +1,101 @@
+:root {
+  --point-c1: #723dfc;
+  --point-c2: #80888a;
+  --point-c3: #000000;
+  --point-c4: #6b7072;
+}
+.sec1 {
+  border: 1px solid red;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.sec1 h2 strong {
+  display: block;
+  text-align: center;
+  font-size: 3em;
+  line-height: 1.25;
+  color: var(--point-c2);
+}
+.sec1 strong span {
+  color: #723dfc;
+}
+/* ul */
+.sec1 .cards {
+  border: 1px solid red;
+  height: 350px;
+  position: relative;
+}
+.sec1 .cards li {
+  border: 1px solid blue;
+  position: absolute;
+  background-color: aliceblue;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 250px;
+  height: 350px;
+  border-radius: 20px;
+  padding: 20px;
+  transition: 0.5s;
+}
+.sec1:hover .cards li:nth-of-type(1) {
+  transform: translateX(50%);
+  transform: rotate(15deg);
+}
+.sec1:hover .cards li:nth-of-type(2) {
+  transform: translateX(-50%);
+  transform: rotate(-15deg);
+}
+.sec1:hover .cards li:nth-of-type(3) {
+  transform: translateX(-50%);
+}
+.sec1:hover .cards li:nth-of-type(4) {
+  transform: translateX(-50%);
+
+  transform: rotate(15deg);
+}
+.sec1:hover .cards li:nth-of-type(5) {
+  transform: translateX(-50%);
+  transform: rotate(-15deg);
+}
+
+.sec1:hover .cards li:nth-of-type(1) {
+  transform: translateX(-250%);
+  transform: rotate(-0deg);
+}
+.sec1:hover .cards li:nth-of-type(2) {
+  transform: translateX(-80%);
+  transform: rotate(-10deg);
+}
+.sec1:hover .cards li:nth-of-type(3) {
+  transform: translateX(-50%);
+}
+.sec1:hover .cards li:nth-of-type(4) {
+  transform: translateX(50%);
+  transform: rotate(15deg);
+}
+.sec1:hover .cards li:nth-of-type(5) {
+  transform: translateX(150%);
+  transform: rotate(25deg);
+}
+.sec3 {
+  clear: both;
+  /* clear: both -> 플로트 가 해제되는 위치다 란 뜻 */
+}
+
+/* .lectuer,
+.treatment,
+.conference,
+.waiting,
+.consultaiton {
+  border: 1px solid var(--point-c1);
+} */
+
+.cateogri {
+  color: var(--point-c4);
+}
+
+.sec1 ul li h3 {
+  color: var(--point-c3);
+  font-weight: bold;
+}

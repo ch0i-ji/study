@@ -1,0 +1,224 @@
+/* .hd {
+  border: 1px solid red;
+}
+.hd > * {
+  border: 1px solid lightblue;
+}
+.hd > * > * {
+  border: 1px solid greenyellow;
+}
+.hd > * > * > * {
+  border: 1px solid plum;
+}
+.hd > * > * > * > * {
+  border: 3px solid lightgreen;
+} */
+
+.logo {
+  width: 15%;
+  max-width: 250px;
+}
+
+.hd {
+  /* position: relative; */
+  /* z-index: 9999; */
+  padding: 1rem 0;
+}
+
+.mw {
+  max-width: 1200px;
+  width: calc(100% - 2rem);
+  margin: auto;
+}
+.hd nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hd .btn_login {
+  width: 90px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  transition: 0.3s;
+  border: 1px solid black;
+}
+.hd .btn_login:hover {
+  background-color: black;
+  color: white;
+}
+.func {
+  margin-bottom: 1rem;
+}
+
+.ham {
+  display: none;
+}
+/* PC 버전 */
+@media (min-width: 1101px) {
+  .hd .gnb {
+    /* width: 100%; */
+    /* flex-grow: 1;
+            flex-basis: auto;
+            flex-shrink: 0; */
+    /* flex:1 0 0 */
+    flex: 1;
+
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 1rem;
+  }
+  .hd .gnb a {
+    display: block;
+    white-space: nowrap;
+  }
+  .hd .gnb > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* border: 1px solid red; */
+  }
+  .hd .gnb > li > a {
+    padding: 1rem 1rem 1.5rem 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .hd .gnb > li:hover > a {
+    color: dodgerblue;
+  }
+
+  .hd .gnb > li::before {
+    content: "";
+    border: 1px solid lightblue;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: -1rem;
+    background-color: dodgerblue;
+    transition: 0.3s linear;
+    /* transition-property: width;
+          transition-duration: 0.3s;
+          transition-delay: 0.3s;
+          transition-timing-function: linear; */
+    opacity: 0;
+    box-shadow: 0px 0 0 dodgerblue, 0px 0 0 dodgerblue;
+  }
+  .hd .gnb > li:hover::before {
+    /* width: 100%; */
+    opacity: 1;
+    box-shadow: 10px 0 0 dodgerblue, -10px 0 0 dodgerblue;
+  }
+
+  .hd .sub {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    transition: 0.3s;
+    opacity: 0;
+    transform: translateY(-1rem);
+
+    border-radius: 1rem;
+    padding: 1rem;
+    border: 1px solid #999;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+
+    /* width: 100%; */
+    min-width: 120px;
+  }
+  .hd .gnb > li:hover .sub {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .hd .sub li:last-of-type a {
+    border-bottom: none;
+  }
+  .hd .sub a {
+    padding: 0.25rem 0;
+    font-size: 0.85rem;
+    text-align: center;
+    border-bottom: 1px dotted lightgray;
+  }
+}
+/* 디바이스 버전 */
+@media (max-width: 1100px) {
+  /* .gnb {
+      border: 1px solid red;
+    } */
+  .gnb > li {
+    border: 1px solid lightblue;
+  }
+  .gnb .sub {
+    height: 0;
+    overflow: hidden;
+  }
+  .gnb > li:hover > a {
+    background-color: #999;
+  }
+  .gnb > li:hover .sub {
+    height: auto;
+    /* min-height: 100%; */
+  }
+  .hd .gnb::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0px;
+    left: -100%;
+    backdrop-filter: blur(2px);
+  }
+  .hd .gnb {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #eaeaea;
+    width: 50%;
+    height: 100%;
+    padding: 100px 0 0 0;
+  }
+  .hd .gnb a {
+    display: block;
+  }
+  .hd .gnb > li {
+    width: 100%;
+  }
+  .hd .gnb > li > a {
+    padding: 1rem;
+    font-weight: bold;
+  }
+  .sub a {
+    padding-left: calc(1rem + 10px);
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .func {
+    display: none;
+  }
+  .ham {
+    display: block;
+    position: relative;
+    z-index: 10;
+  }
+
+  .hd .gnb.on {
+    display: flex;
+  }
+  .hd .func.on {
+  }
+  .hd .ham.on {
+  }
+}

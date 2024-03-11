@@ -1,0 +1,62 @@
+.sec1 {
+  border: 1px solid red;
+  /* background-color: rgba(0, 0, 0, 0.01); */
+  background-color: #fcfcfc;
+}
+.sec1 h2 {
+  text-align: center;
+  font-size: 3em;
+  line-height: 1.25;
+  color: #888;
+}
+.sec1 h2 strong {
+  display: block;
+}
+.sec1 h2 span {
+  color: purple;
+}
+/* ul */
+.sec1 .cards {
+  border: 1px solid red;
+  height: 350px;
+  position: relative;
+}
+.sec1 .cards li {
+  border: 1px solid blue;
+  position: absolute;
+  background-color: aliceblue;
+  left: 50%;
+  top: 0;
+  width: 250px;
+  height: 350px;
+  border-radius: 20px;
+  padding: 20px;
+  transition: 0.5s;
+}
+.sec1 .cards li:nth-of-type(1) {
+  transform: translateX(-100%) rotate(-20deg);
+}
+.sec1 .cards li:nth-of-type(2) {
+  transform: translateX(-80%) rotate(-10deg);
+}
+.sec1 .cards li:nth-of-type(3) {
+  transform: translateX(-50%) translateY(-5px);
+}
+.sec1 .cards li:nth-of-type(4) {
+  transform: translateX(-30%) rotate(10deg);
+}
+.sec1 .cards li:nth-of-type(5) {
+  transform: translateX(0%) translateY(30px) rotate(25deg);
+}
+.sec1:hover .cards li:nth-of-type(1) {
+  transform: translateX(-250%) rotate(15deg);
+}
+.sec1:hover .cards li:nth-of-type(2) {
+  transform: translateX(-150%) rotate(-15deg);
+}
+.sec1:hover .cards li:nth-of-type(4) {
+  transform: translateX(50%) rotate(15deg);
+}
+.sec1:hover .cards li:nth-of-type(5) {
+  transform: translateX(150%) rotate(-15deg);
+}

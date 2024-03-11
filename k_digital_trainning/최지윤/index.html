@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="header.css" />
+  </head>
+  <!-- 헤더에 relative를 주는 이유는 nav에 z-index를 주기위함 -->
+  <body>
+    <header class="hd">
+      <nav>
+        <h1 class="logo"></h1>
+        <ul class="gnb"></ul>
+        <!-- 옆으로 나열하고싶으면 무조건flex  justify는 나중일 . li가 아니라 부모한테 주기. 그렇게되면 inline-block이 됨 -->
+        <div class="func"></div>
+        <button class="ham"><i class="fa-solid fa-bars"></i></button>
+      </nav>
+    </header>
+
+    <section>1</section>
+    <section>2</section>
+    <section>3</section>
+    <section>4</section>
+
+    <footer>하단</footer>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+/* .hd,
+      .hd > * {
+        border: 1px solid red;
+      } */
+.hd {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hd ul {
+  display: flex;
+  border: 1px solid lightgreen;
+}
+.hd li {
+  border: 1px solid tomato;
+}
+.hd a {
+  border: 1px solid lightgray;
+  display: block;
+  padding: 1em 2em;
+}
+.hd a:hover {
+  background-color: aliceblue;
+}
+.hd .sub {
+  display: none;
+  position: absolute;
+}
+.hd .gnb > li:hover .sub {
+  display: flex;
+}

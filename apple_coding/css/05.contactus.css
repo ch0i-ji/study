@@ -1,0 +1,66 @@
+body {
+  background-color: rgb(77, 77, 77);
+}
+.container {
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 55%;
+  max-width: 800%;
+  padding: 30px;
+  line-height: 1;
+  margin: 20%;
+  position: relative;
+  background-color: white;
+}
+.contactus {
+  border: 1px solid red;
+}
+
+.input-email {
+  /* border: 1px solid red; */
+}
+.input-name {
+  display: inline-block;
+  padding: 10px;
+  /* border: 1px solid red; */
+}
+/* input [type="text"] {
+  width: 200%;
+  padding: 10px 20px;
+  margin: auto;
+  box-sizing: border-box;
+} */
+input[type="text"] {
+  width: 100%;
+  height: 25px;
+  border-radius: 7px;
+  border-color: gainsboro;
+  margin: auto;
+}
+.input-message {
+  /* border: 1px solid red; */
+}
+.checkbox-sub {
+  display: inline-block;
+  /* border: 1px solid red; */
+  font-size: 13px;
+}
+.sub-title {
+  font-weight: 500;
+  font-size: 16px;
+  /* border: 1px solid red; */
+}
+
+.button-send {
+  background-color: gold;
+  border-color: transparent;
+  display: inline-block;
+  color: white;
+  padding: 5px 45px;
+  border-radius: 7px;
+  font-weight: 600;
+  /* border: 1px solid red; */
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+}

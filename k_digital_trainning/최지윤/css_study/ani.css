@@ -1,0 +1,47 @@
+.sec1 {
+  border: 1px solid red;
+  max-width: 800px;
+  width: 80%;
+  height: 50vh;
+  margin: auto;
+  position: relative;
+}
+.sec1::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  border-radius: 50% 65% 52% 53% / 70% 60% 80% 55%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  animation: ani1 2s ease 0.5s infinite alternate both;
+  /* animation-name: ani1; */
+  /* animation-duration: 2s; */
+  /* animation-delay: 2s; */
+  /* animation-play-state: paused; */
+  /* animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1); */
+  /* animation-iteration-count: 2; */
+  /* animation-direction: alternate; */
+  /* 정방향으로 갔다가 역방향으로 가는것을 의미(alternate) 최소 animation interation count가 두번은 있어야 왕복을 한번으로 칠 수 있음 */
+  /* animation-fill-mode: both; */
+  /* 원자리 말고 처음자리로 되돌아옴 */
+}
+
+.sec1:hover::before {
+  animation-play-state: running;
+}
+
+@keyframes ani1 {
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  100% {
+    top: 100%;
+    left: 100%;
+  }
+}

@@ -1,0 +1,24 @@
+.wrap {
+  width: 1200px;
+  margin: 50px auto;
+  border: 1px solid yellowgreen;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px;
+border: 1px solid tomato;
+grid-template-areas: ;
+}
+
+/* @media (max-width: 800px;) { } */
+.text1{grid-area: 1;}
+.text2{grid-area: 2;}
+.text3{grid-area: 3;}
+.text4{grid-area: 4;}
+.text5{grid-area: 5;}
+.text6{grid-area: 6;}
+.text7{grid-area: 7;}
+.text8{grid-area: 8;}
+.text9{grid-area: 9;}

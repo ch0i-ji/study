@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+.warp {
+  border: 1px solid red;
+  max-width: 1200px;
+  margin: 50px auto;
+  display: grid;
+  position: relative;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  /* grid-template-rows: repeat(11, 1fr); */
+  grid-auto-rows: 50px;
+  /* =사이즈동일화위함/암시적 영역(줄번호가 마이너스를 사용할 수 없다는점 제외 다 동일)은 자동으로 50px로 확정하겠다는뜻 / repeat으로 지정x */
+}
+
+.warp > * {
+  border: 1px solid lightblue;
+}
+header,
+footer {
+  grid-column: span 4;
+  grid-row: span 2;
+  /* 현재위치에서 4행을 합쳐라 / 1/5를 쓰면 고정위치이기 떄문에 앞에 어떤 요소가 오면 겹쳐지게됨. */
+}
+
+section:nth-of-type(1),
+section:nth-of-type(7) {
+  grid-row: span 3;
+  grid-column: span 2;
+}
+section:nth-of-type(2) {
+  grid-row: span 4;
+  grid-column: span 2;
+}
+section:nth-of-type(6) {
+  grid-row: span 4;
+}
+section:nth-of-type(9) {
+  position: absolute;
+  background-color: aqua;
+  top: 100px;
+  width: 50%;
+  height: 100px;
+  left: 25%;
+}
+section:nth-of-type(3),
+section:nth-of-type(4),
+section:nth-of-type(5),
+section:nth-of-type(8) {
+  grid-row: span 2;
+}

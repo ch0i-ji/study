@@ -1,0 +1,77 @@
+.hd {
+    border: 1px solid red;
+  }
+  .hd > * {
+    border: 1px solid lightblue;
+  }
+  .hd > * > * {
+    border: 1px solid greenyellow;
+  }
+  .hd > * > * > * {
+    border: 1px solid plum;
+  }
+  .hd > * > * > * > * {
+    border: 3px solid lightgreen;
+  }
+  .logo img {
+    /* width: 100px; */
+    height: 50px;
+  }
+  .hd {
+    /* position: relative; */
+    /* z-index: 9999; */
+    padding: 1rem 0;
+  }
+  .mw {
+    max-width: 1200px;
+    width: calc(100% - 2rem);
+    margin: auto;
+  }
+  .hd nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hd .gnb {
+    /* width: 100%; */
+    /* flex-grow: 1;
+      flex-basis: auto;
+      flex-shrink: 0; */
+    /* flex:1 0 0 */
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 1rem;
+  }
+  .hd .gnb a {
+    display: block;
+  }
+  .hd .gnb > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .hd .gnb > li > a {
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .hd .gnb > li:hover > a {
+    color: dodgerblue;
+  }
+  .hd .sub {
+    display: none;
+    position: absolute;
+    top: 100%;
+  }
+  .hd .gnb > li:hover .sub {
+    display: block;
+  }
+  .hd .sub li {
+  }
+  .hd .sub a {
+  }
+  .ham {
+    display: none;
+  }

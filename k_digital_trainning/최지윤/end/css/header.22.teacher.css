@@ -1,0 +1,58 @@
+.hd,
+.hd > * {
+  border: 1px solid red;
+}
+.mw {
+  max-width: 1200px;
+  width: calc(100% - 4rem);
+  margin: auto;
+}
+.hd {
+  border: 5px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hd .logo {
+  padding: 1rem 0;
+  width: 120px;
+}
+.hd .logo:hover {
+  opacity: 0.8;
+}
+.hd .gnb {
+  border: 5px solid lightblue;
+  display: flex;
+}
+.hd .gnb a {
+  display: block;
+}
+.hd .gnb > li:hover > a {
+  color: red;
+  background-color: aliceblue;
+}
+.hd .gnb > li {
+  border: 1px solid tomato;
+  position: relative;
+  padding: 1rem 0;
+}
+.hd .gnb > li > a {
+  padding: 1rem 2rem;
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.hd .sub {
+  border: 1px solid lightgreen;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  text-align: center;
+  display: none;
+}
+.hd .gnb > li:hover .sub {
+  display: block;
+}
+.hd .sub a {
+  padding: 0.5rem;
+}

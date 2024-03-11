@@ -1,0 +1,56 @@
+@charset 'utf-8';
+
+img {
+  width: 100;
+}
+.con {
+  border: 1px solid red;
+  display: flex;
+  width: 300vw;
+}
+.sec1 {
+  border: 10px solid lightcoral;
+  width: 100%;
+  overflow: hidden;
+}
+.sec1 figure {
+  border: 5px solid lightblue;
+  width: calc(100% / 3);
+  height: 35vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.sec1 figure > * {
+  border: 1px solid light lightgreen;
+  position: absolute;
+}
+.sec1 figure figcaption {
+  z-index: 10;
+  color: white;
+  left: 60%;
+  top: 10%;
+  line-height: 1.6;
+}
+
+.sec1 figure h2 > * {
+  display: block;
+}
+.sec1 figure strong {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.sec1 figure a {
+  left: 60%;
+  top: 80%;
+  background-color: white;
+  color: black;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* z-index: 20; */
+  text-transform: uppercase;
+}

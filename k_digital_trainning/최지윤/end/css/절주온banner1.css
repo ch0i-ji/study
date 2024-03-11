@@ -1,0 +1,50 @@
+body {
+  background-color: blanchedalmond;
+}
+.container {
+  border: 1px solid #7862bf;
+  width: 400px;
+  height: 200px;
+  border-radius: 30px;
+  background-color: #7862bf;
+  padding: 32px;
+  display: block;
+  text-decoration: none;
+  margin: 100px auto;
+  position: relative;
+  top: 0;
+}
+
+strong {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+p {
+  color: white;
+  font-size: 18px;
+  line-height: 2;
+}
+i {
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  transition: 0.3s;
+}
+
+img {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  transform: translatey(-50%);
+}
+
+.container:hover {
+  top: -50px;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 1);
+  transition: 0.3s;
+}
+.banner:hover i {
+  left: 100px;
+}

@@ -1,0 +1,54 @@
+.box1 {
+  border: 1px solid red;
+  width: 50%;
+  max-width: 400px;
+  margin: 100px 0 0 100px;
+}
+.listcon {
+  border: 1px solid lightblue;
+  display: flex;
+  width: 300%;
+}
+.listcon > li {
+  border: 3px solid lightgreen;
+  width: calc(100% / 3);
+}
+.listcon > li:nth-last-of-type(3) ~ li {
+  display: none;
+}
+.box1 .btn {
+  background-color: transparent;
+  border: 1px solid;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  top: -45px;
+  right: 0;
+}
+.box1 .btn.prev {
+  right: 45px;
+}
+.box1 .btn:hover {
+  background-color: beige;
+}
+
+.box1 .btn,
+.box1 .pg {
+  position: absolute;
+}
+.bo1 .pg {
+  border: 1px solid lightgray;
+  left: 50%;
+  bottom: -21px;
+  transform: translateX(-50%);
+}
+.box1 .pg span {
+  font-size: 0.5rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #eaeaee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .con {border: 1px solid red;
+    display: flex;
+/* flex-wrap: wrap; */
+/* justify-content: flex-start; */
+/* justify-content: center;
+align-content:center;
+flex-direction: row; */
+/* justify-content: flex-end; */
+/* justify-content: space-around; */
+/* justify-content: space-between; */
+/* justify-content: space-evenly; */
+width: 800px;
+height: 100px;
+}
+
+/* 부모관계에서 적용할 수 있는 속성들 목록 */
+
+
+
+.con > div { border: 3px solid lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* /* width: calc(100%/3); */
+flex-grow: 1; 
+flex-basis: 0; */
+  /* 그로우:여백비율  */
+ /*기본사이즈  */
+
+}
+.item1 { flex-grow: 1; order: 1;}    
+.item2 { order: -1;
+     flex-grow: 0.5;}
+.item3 {flex-grow:2}
+</style>
+</head>
+<body>
+    <h1>flex !</h1>
+    <div class="con">
+        <div class="item1">item1</div>
+        <div class="item2">item2</div>
+        <div class="item3">item3</div>
+        <!-- <div class="item">item4</div>
+        <div class="item">item5</div>
+        <div class="item">item6</div>
+        <div class="item">item7</div>
+        <div class="item">item8</div> -->
+
+</body>
+</html>

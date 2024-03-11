@@ -1,0 +1,39 @@
+.pictuere {
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main {
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.content1 {
+  text-align: center;
+}
+
+.box1 {
+  width: 300px;
+  height: 150px;
+  margin: 30px;
+  /* margin - 외부여백 */
+  background-color: cadetblue;
+  padding: 40px;
+  /* 내부 여백 */
+  border: 3px solid red;
+  /* solid - 실선 */
+  border-radius: 20px;
+  /* 둥글기 */
+  display: block;
+  /* div는 블록을 기본적으로 가지고있기에 생략가능 -p태그 ,div태그 , h123456태그 = 가로행을 전부차지해주세요 라는 뜻이 block */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 20px;
+  /* 일부스타일은 부모에 지정시 상속됨 (inherit) -fontsize , color, fontfamily(글씨체) */
+  /* inherit (상속) 시 중요도는 가장낮음!!! */
+  color: white;
+  box-shadow: 15px 15px black;
+  /* box-shadow -  길이가 2개 = x,y / 3개 = x,y,blur / 4개=x,y,blur,spread // 블러는 양수만 가능, 클수록 넓고희미해짐 , 스프레드는 그림자 확대,축소 양음수둘다가능 */
+}

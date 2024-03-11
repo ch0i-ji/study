@@ -1,0 +1,15 @@
+.test {
+  width: 50vw;
+  /* 브라우저 폭에 비례 */
+
+  height: 50vh;
+  /* 브라우저 높이 비례 */
+
+  font-size: 1rem;
+  /* rem 기본 폰트사이즈에 비례 / 1rem = 16px - 타이포그래피 디자인할때 px외우기 귀찮을때 사용한다고함*/
+
+  font-size: 1em;
+  /* 내 폰트 사이즈의 비례 */
+
+  background-color: gray;
+}

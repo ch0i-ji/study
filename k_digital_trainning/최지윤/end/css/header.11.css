@@ -1,0 +1,53 @@
+.hd {
+  box-sizing: border-box;
+  border: 1px solid red;
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  white-space: nowrap;
+}
+.hd h1 {
+  display: inline-block;
+  background-size: contain;
+  background-image: url(C:\최지윤\Html_study\img\main-logo.svg);
+  vertical-align: top;
+  /* width: 124px;
+  height: 100%; */
+}
+.hd .categori {
+  font-weight: bolder;
+  color: #134aa9;
+}
+.hd ul {
+  margin: 0;
+  display: flex;
+  border: 1px solid blue;
+}
+.hd li {
+  border: 1px solid skyblue;
+}
+.hd a {
+  border: 1px solid tomato;
+  display: block;
+  padding: 1em 2em;
+}
+
+.hd .sub {
+  font-weight: 100;
+  position: absolute;
+  display: none;
+  flex-direction: column;
+}
+.hd .gnb .sub li:hover {
+  color: #134aa9;
+}
+.hd .categori:hover {
+  color: black;
+}
+.hd .categori:hover .sub {
+  display: flex;
+}

@@ -1,0 +1,118 @@
+.sec1 {
+  border: 1px solid red;
+  width: 80%;
+  /* width: 600px; */
+  margin: auto;
+  position: relative;
+}
+.listCon {
+  overflow: hidden;
+}
+.listCon ul {
+  display: flex;
+  width: 200%;
+}
+.listCon li {
+  width: calc(100% / 4);
+}
+.sec1 > button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: dodgerblue;
+  border: none;
+  outline: none;
+}
+.sec1 > button:hover,
+.sec1 > button:focus {
+  background-color: black;
+  color: white;
+}
+.sec1 .btn_prev {
+  left: -50px;
+}
+.sec1 .btn_next {
+  right: -50px;
+}
+
+.card {
+  position: relative;
+  padding: 0.5rem;
+}
+.besttg {
+  color: black;
+  border: 1px solid black;
+  text-align: center;
+  justify-content: center;
+  line-height: 1.3;
+  border-radius: 16px;
+  list-style: none;
+  position: absolute;
+  margin: auto;
+  top: 5%;
+  left: 5%;
+  width: 50px;
+  height: 20px;
+  font-size: 0.8rem;
+  z-index: 999;
+}
+.listCon li:nth-of-type(2n) .card {
+  margin-left: 0.5rem;
+}
+.listCon li:nth-of-type(2n + 1) .card {
+  margin-right: 0.5rem;
+}
+.card .imgs {
+  position: relative;
+  padding-top: 120%;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.card .imgs img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+}
+.card .imgs img:nth-of-type(2) {
+  opacity: 0;
+  transition: 0.3s;
+}
+.card:hover .imgs img:nth-of-type(2) {
+  opacity: 1;
+}
+.card .info u {
+  text-decoration: line-through;
+}
+.card .icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.card .icon button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.card .icon img {
+  width: 20px;
+  opacity: 0.8;
+}
+.card .icon button:hover img {
+  opacity: 1;
+}
+.card .more {
+  position: absolute;
+  color: transparent;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
