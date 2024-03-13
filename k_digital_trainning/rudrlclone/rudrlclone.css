@@ -208,6 +208,6 @@ display: none;
 /* ----여기까지 헤더 네비게이션~ ------ */
 
 
-.mainVisual {
-            
+.mainVisual { border: 1px solid salmon;
+
 }
