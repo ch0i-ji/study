@@ -1,0 +1,31 @@
+:root {
+--color-mb: #144aaa;
+--color-sb: #f0f4ff;
+--color-bk: #000000;
+--color-dg: #333333;
+--color-lg: #777777;
+--color-wh: #ffffff;
+
+--font-size-m: 1.312rem;
+--font-size-s:0.857em;
+--font-size-f:0.875rem;
+
+}
+.warp { border: 1px solid black;}
+.hd > * { border: 1px solid red;}
+.gnb > * { border:  1px solid slateblue;}
+
+
+.mw { 
+max-width: 1440px; 
+width: calc(100% - 4rem);
+margin: auto;
+}
+.hd {
+
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            position: relative;
+            z-index: 10;
+}
