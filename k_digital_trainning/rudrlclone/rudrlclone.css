@@ -21,7 +21,7 @@
             --font-size-f:0.875rem;
 }
 /* 외곽선 */
-.warp { border: 1px solid black;}
+/* .warp { border: 1px solid black;} */
 /* .hd > * { border: 1px solid red;} */
 /* .gnb > * { border:  1px solid slateblue;} */
 
@@ -74,7 +74,7 @@ body {
 }
 .hd .gnb { display: flex;
             width: 500%;}
-            .hd .gnb a{
+.hd .gnb a{
             display: block;
             white-space: nowrap;
 }
@@ -128,8 +128,28 @@ font-style: normal;
 .hd .gnb .sub a:hover {
             color: var(--color-bk);
 }
+.sub > li a { vertical-align: middle;
+position: relative;
+} 
 
 
+/* 마우스 호버 원 표시 */
+.sub > li a::after {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: var(--color-mb);
+            transition: 0.4s ease;
+            opacity: 0;
+            margin-left: 1rem;
+}
+
+.sub > li a:hover::after {
+            opacity: 1;
+transform: scale(1);
+}
 
 
 .hd .func {
@@ -185,3 +205,9 @@ display: none;
 
 }
 
+/* ----여기까지 헤더 네비게이션~ ------ */
+
+
+.mainVisual {
+            
+}
