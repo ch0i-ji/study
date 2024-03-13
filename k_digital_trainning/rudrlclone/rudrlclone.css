@@ -1,31 +1,187 @@
-:root {
---color-mb: #144aaa;
---color-sb: #f0f4ff;
---color-bk: #000000;
---color-dg: #333333;
---color-lg: #777777;
---color-wh: #ffffff;
-
---font-size-m: 1.312rem;
---font-size-s:0.857em;
---font-size-f:0.875rem;
-
+@charset 'utf-8';
+@font-face {
+            font-family: "GmarketSansMedium";
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
 }
+
+
+
+:root {
+            --color-mb: #144aaa;
+            --color-sb: #f0f4ff;
+            --color-bk: #000000;
+            --color-dg: #333333;
+            --color-lg: #777777;
+            --color-wh: #ffffff;
+            
+            --font-size-m: 1.312rem;
+            --font-size-s:0.857em;
+            --font-size-f:0.875rem;
+}
+/* 외곽선 */
 .warp { border: 1px solid black;}
-.hd > * { border: 1px solid red;}
-.gnb > * { border:  1px solid slateblue;}
+/* .hd > * { border: 1px solid red;} */
+/* .gnb > * { border:  1px solid slateblue;} */
+
+body { 
+            font-family: "GmarketSansMedium";
+            /* font-weight: 400; */
+            word-break: keep-all;
+            line-height: 1;
+}
 
 
+.warp { 
+            overflow: hidden;
+}
 .mw { 
-max-width: 1440px; 
-width: calc(100% - 4rem);
-margin: auto;
+            max-width: 1440px; 
+            width: calc(100% - 4rem);
+            margin: auto;
 }
 .hd {
-
+            
             display: flex;
             justify-content: space-between;
             margin: auto;
-            position: relative;
             z-index: 10;
+            position: relative;
+            z-index: 999;
 }
+.hd .logo { 
+            padding: 1rem 0;
+            width: 120px; 
+}
+.hd .logo:hover { opacity: 0.8;}
+/* 마우스 가져다대면 나오는 서브메뉴 공간 */
+.hd nav::before {
+            background-color: var(--color-sb);
+            
+            content: "여기";
+            position: absolute;
+            top: 100%;
+            left: -500%;
+            width: 1000%;
+            height: 0;
+            opacity: 0;
+            transition: 0.3s;
+}
+.hd nav:hover::before {
+            height: 200%;
+            opacity: 1;
+}
+.hd .gnb { display: flex;
+            width: 500%;}
+            .hd .gnb a{
+            display: block;
+            white-space: nowrap;
+}
+.hd .gnb > li:hover > a {
+            color: var(--color-bk);
+            
+}
+
+.hd .gnb > li {
+            position: relative;
+            padding: 1rem 0 ;
+}
+
+.hd .gnb > li > a {
+            color: var(--color-mb);
+            padding: 1rem 2rem;
+            font-family: "GmarketSansMedium", sans-serif;
+            font-weight: 900;
+                        font-size: var(--font-size-m);
+font-style: normal;
+}
+.hd .sub {
+            position: absolute;
+            width: 100%;
+            padding: 1.5rem;
+            white-space: nowrap;
+            top: 100%;
+            text-align: center;
+            transition: opacity 0.5s;
+            opacity: 0;
+            height: 0;
+            /* overflow: hidden; */
+            transition: 0.3s;
+}
+.hd .gnb:hover .sub {
+            opacity: 1;
+            height: 120px;
+
+}
+.hd .sub > * { text-align: left;}
+.hd .gnb a {
+            padding: 0.5rem;
+}
+
+.hd .gnb .sub a {
+            font-size: var(--font-size-s);
+            color: var(--color-mb);
+
+}
+
+.hd .gnb .sub a:hover {
+            color: var(--color-bk);
+}
+
+
+
+
+.hd .func {
+            display: flex;
+            
+            align-items: center;
+/* align item center 안해놓고 센터정렬안된다고 찡찡거림 미친것 */
+}
+.hd .func a {
+            padding: 0.5rem 1rem;
+            font-size: var(--font-size-f);
+            position: relative;
+            white-space: nowrap;
+            color: var(--color-mb);
+            
+}
+.hd .func a i {
+            font-size: 0.8em;
+            color:var(--color-mb);
+            vertical-align: middle;
+}
+
+.hd .func a::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 1px;
+            width: calc(100% -2rem);
+            background-color: var(--color-mb);
+            opacity: 0;
+            transition: opacity 0.3s;
+}
+
+.hd .func a:hover::before {
+            opacity: 1;
+}
+.hd .func a:hover {
+            text-decoration-line: underline;
+
+}
+.ham { background-color: transparent;
+border: none;
+outline: none;
+font-size: 1.5rem;
+display: none;
+}
+
+.ham:hover,
+.ham:focus {
+            color: #144aaa;
+
+}
+
