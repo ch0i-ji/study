@@ -7,45 +7,47 @@
 } */
 
 /* .gnb { */
-            /* display: flex; */
-            /* position: relative;} */
+/* display: flex; */
+/* position: relative;} */
 
-.container { position: relative;
-            width: 100%;
-            height: 500px;
-            background-image: url(/shop/img/shoes.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            color: white;
-            padding: 1px;
+.container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-image: url(/shop/img/shoes.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding: 1px;
 }
-.mh { 
-            font-size: 3rem;
-            font-weight: 600;
-            margin-top: 13rem;
-            margin-left: 2%;
-            
-            
+.mh {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 13rem;
+  margin-left: 2%;
 }
 
 .explain {
-            font-size: 1rem;
-            font-weight: 100;
-            margin-top: 1.25rem;
-            margin-left: 2%;}
-            
-.goshopping {
-                        font-weight: 600;
-                        background-color: transparent;
-                        border: none;
-                        margin-top: 3rem;
-                        margin-left: 1.6%;
-                        height: 50px;
-                        transition: 0.5s;
+  font-size: 1rem;
+  font-weight: 100;
+  margin-top: 1.25rem;
+  margin-left: 2%;
 }
-.goshopping > * { color: white; 
+
+.goshopping {
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+  margin-top: 3rem;
+  margin-left: 1.6%;
+  height: 50px;
+  transition: 0.5s;
+}
+.goshopping > * {
+  color: white;
 }
 
 .goshopping:hover {
-margin-left: 3%;}
+  margin-left: 3%;
+}
