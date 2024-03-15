@@ -9,7 +9,6 @@
 /* .gnb { */
 /* display: flex; */
 /* position: relative;} */
-
 .container {
   position: relative;
   width: 100%;
@@ -20,34 +19,74 @@
   background-position: center;
   color: white;
   padding: 1px;
+  text-align: center;
+}
+.container::before {
+  content: "";
+  opacity: 0.5;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #000;
 }
 .mh {
+  position: relative;
   font-size: 3rem;
   font-weight: 600;
-  margin-top: 13rem;
+  margin-top: 11rem;
   margin-left: 2%;
 }
 
 .explain {
+  position: relative;
   font-size: 1rem;
   font-weight: 100;
-  margin-top: 1.25rem;
+  margin-top: 2.7rem;
   margin-left: 2%;
+  line-height: 1.25;
 }
 
 .goshopping {
+  position: relative;
   font-weight: 600;
   background-color: transparent;
   border: none;
-  margin-top: 3rem;
+  margin-top: 2.8rem;
   margin-left: 1.6%;
   height: 50px;
   transition: 0.5s;
+  width: 10rem;
+  height: 2.2rem;
+  border: 1px solid white;
+  border-radius: 1rem;
 }
 .goshopping > * {
   color: white;
 }
 
 .goshopping:hover {
-  margin-left: 3%;
+  margin-top: 2.3%;
+}
+
+.subexplain {
+  width: 45%;
+  margin: auto;
+  padding: 2%;
+  background-color: #eee;
+  text-align: center;
+  position: relative;
+  top: -2rem;
+}
+
+.subexplain > h4 {
+  font-size: 1.3rem;
+  font-weight: 530;
+}
+.subexplain > p {
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  line-height: 1.4;
+  text-wrap: nowrap;
 }
