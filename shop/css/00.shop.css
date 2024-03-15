@@ -1,14 +1,25 @@
-/* header {
-            max-width: 1900x;
-            width: 100%;
-            border:  1px solid red;
-            position: relative;
-            
-} */
+header {
+  max-width: 1900x;
+  width: 100%;
+  border: 1px solid red;
+}
 
-/* .gnb { */
-/* display: flex; */
-/* position: relative;} */
+.gnb {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  font-size: 2rem;
+  margin: 0.8rem;
+  font-weight: 550;
+}
+.categori {
+  display: flex;
+  margin: auto;
+  font-weight: 455;
+}
+.categori > ul {
+}
 .container {
   position: relative;
   width: 100%;
@@ -21,6 +32,7 @@
   padding: 1px;
   text-align: center;
 }
+/* 배경화면 어둡게 하는 용도의 가상요소 */
 .container::before {
   content: "";
   opacity: 0.5;
