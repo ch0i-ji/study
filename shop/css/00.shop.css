@@ -1,7 +1,7 @@
 body {
   margin: 0px;
 }
-header {
+header.mainVisual {
   max-width: 1900x;
   width: 100%;
 }
@@ -104,9 +104,6 @@ header {
   text-wrap: nowrap;
 }
 
-.form-background * {
-  border: 1px solid saddlebrown;
-}
 .form-background {
   background-color: rgb(70, 69, 69);
   margin: auto;
@@ -115,7 +112,7 @@ header {
 }
 .form-white {
   background-color: white;
-  width: 50%;
+  width: 65%;
   margin: auto;
   position: relative;
 }
@@ -123,27 +120,26 @@ header {
 .form-white form > h3 {
   font-size: 2rem;
   font-weight: 550;
-  margin: 2rem 1rem;
+  margin: 2rem 2rem;
 }
 .form-white {
   border: 1px solid transparent;
 }
 
 .form-white p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 0.5rem 0;
-  font-weight: 400;
+  font-weight: 500;
 }
-
 .w100 {
   width: 100%;
   clear: both;
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 .w50 {
   width: 50%;
   float: left;
-  padding: 1rem;
+  padding: 0rem 2rem;
 }
 .input-text {
   width: 100%;
@@ -153,8 +149,25 @@ header {
   box-sizing: border-box;
 }
 .input-check {
-  margin: 1rem 0;
+  margin: 0.3rem 2rem 3rem 2rem;
 }
-#subscribe {
-  font-size: 0.3rem;
+
+.input-check > label {
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+.form-button {
+  background-color: rgb(255, 187, 0);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  padding: 0.3rem 3rem;
+  display: block;
+  margin-left: auto;
+  margin-top: -4.5%;
+}
+.input-check::hover {
+  cursor: pointer;
 }
