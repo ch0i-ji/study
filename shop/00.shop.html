@@ -62,17 +62,40 @@
       <div class="form-white">
         <form>
           <h3>Contact Us</h3>
-          <p>Your Email</p>
-          <input class="form-input" type="email" />
-          <p>First Name</p>
-          <input class="form-input" type="text" />
-          <p>Last Name</p>
-          <input class="form-input" type="text" />
-          <p>Message</p>
-          <input class="form-input" type="text" />
-          <input class="form-checkbox" type="checkbox" />
-          <p>Subscribe</p>
-          <button class="form-button">SEND</button>
+          <div class="w100">
+            <p>Your Email</p>
+            <input
+              class="input-text"
+              type="email"
+              placeholder="email@exaple.com"
+            />
+          </div>
+          <div class="w50">
+            <p>First Name</p>
+            <input class="input-text" type="text" />
+          </div>
+          <div class="w50">
+            <p>Last Name</p>
+            <input class="input-text" type="text" />
+          </div>
+
+          <div class="w100">
+            <p>Message</p>
+            <textarea
+              class="input-text"
+              name="input-message"
+              id=""
+              cols="100%"
+              rows="10"
+            ></textarea>
+          </div>
+        </form>
+
+        <form class="input-check">
+          <input type="checkbox" id="subscribe" />
+          <label for="subscribe">Subscribe</label>
+
+          <button class="form-button" type="submit">SEND</button>
         </form>
       </div>
     </div>

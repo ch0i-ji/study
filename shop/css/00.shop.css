@@ -1,7 +1,9 @@
+body {
+  margin: 0px;
+}
 header {
   max-width: 1900x;
   width: 100%;
-  border: 1px solid red;
 }
 
 .gnb {
@@ -18,8 +20,7 @@ header {
   margin: auto;
   font-weight: 455;
 }
-.categori > ul {
-}
+
 .container {
   position: relative;
   width: 100%;
@@ -101,4 +102,59 @@ header {
   margin-top: 1rem;
   line-height: 1.4;
   text-wrap: nowrap;
+}
+
+.form-background * {
+  border: 1px solid saddlebrown;
+}
+.form-background {
+  background-color: rgb(70, 69, 69);
+  margin: auto;
+  padding: 5% 13%;
+  width: 100%;
+}
+.form-white {
+  background-color: white;
+  width: 50%;
+  margin: auto;
+  position: relative;
+}
+
+.form-white form > h3 {
+  font-size: 2rem;
+  font-weight: 550;
+  margin: 2rem 1rem;
+}
+.form-white {
+  border: 1px solid transparent;
+}
+
+.form-white p {
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+  font-weight: 400;
+}
+
+.w100 {
+  width: 100%;
+  clear: both;
+  padding: 1rem;
+}
+.w50 {
+  width: 50%;
+  float: left;
+  padding: 1rem;
+}
+.input-text {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.input-check {
+  margin: 1rem 0;
+}
+#subscribe {
+  font-size: 0.3rem;
 }
