@@ -10,15 +10,30 @@ header.mainVisual {
   display: flex;
   justify-content: space-between;
 }
+.gnb * {
+  border: 1px solid springgreen;
+}
 .logo {
   font-size: 2rem;
   margin: 0.8rem;
   font-weight: 550;
+  flex-grow: 6;
 }
 .categori {
   display: flex;
-  margin: auto;
   font-weight: 455;
+  align-items: center;
+  text-align: center;
+  gap: 10%;
+  flex-grow: 1.4;
+  justify-content: space-around;
+}
+.func {
+  display: flex;
+  margin: 1%;
+  flex-grow: 0.01;
+  align-items: center;
+  text-align: center;
 }
 
 .container {
@@ -101,7 +116,31 @@ header.mainVisual {
   font-size: 0.95rem;
   margin-top: 1rem;
   line-height: 1.4;
-  text-wrap: nowrap;
+  text-wrap: wrap;
+}
+.advan {
+  border: 1px solid red;
+  display: flex;
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.advan > div {
+  border: 1px solid teal;
+  flex: 0 0 calc(25%-1rem);
+  text-align: center;
+  line-height: 1.7;
+  padding: 1%;
+}
+.sub-advan {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.advan-ex {
+  font-size: 0.95rem;
 }
 
 .form-background {
@@ -112,18 +151,20 @@ header.mainVisual {
 }
 .form-white {
   background-color: white;
+  max-width: 720px;
   width: 65%;
   margin: auto;
   position: relative;
+  border: 1px solid transparent;
 }
-
+.form-white form input,
+.form-white form textarea {
+  border: 1px solid gray;
+}
 .form-white form > h3 {
   font-size: 2rem;
   font-weight: 550;
   margin: 2rem 2rem;
-}
-.form-white {
-  border: 1px solid transparent;
 }
 
 .form-white p {
@@ -168,6 +209,15 @@ header.mainVisual {
   margin-left: auto;
   margin-top: -4.5%;
 }
-.input-check::hover {
-  cursor: pointer;
+
+@media (max-width: 1200px) {
+  .advan > div {
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .advan > div {
+    flex: 0 0 100%;
+  }
 }
