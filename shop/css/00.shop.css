@@ -24,7 +24,7 @@ header.mainVisual {
   font-weight: 455;
   align-items: center;
   text-align: center;
-  gap: 10%;
+  gap: 2rem;
   flex-grow: 1.4;
   justify-content: space-around;
 }
@@ -119,21 +119,26 @@ header.mainVisual {
   text-wrap: wrap;
 }
 .advan {
-  border: 1px solid red;
   display: flex;
   width: 80%;
-  max-width: 1000px;
   margin: auto;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
 }
 .advan > div {
-  border: 1px solid teal;
   flex: 0 0 calc(25%-1rem);
   text-align: center;
   line-height: 1.7;
-  padding: 1%;
+  padding: 4%;
+}
+.advan i {
+  background-color: burlywood;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  padding-top: 25px;
+  color: white;
 }
 .sub-advan {
   font-size: 1.25rem;
