@@ -10,9 +10,6 @@ header.mainVisual {
   display: flex;
   justify-content: space-between;
 }
-.gnb * {
-  border: 1px solid springgreen;
-}
 .logo {
   font-size: 2rem;
   margin: 0.8rem;
