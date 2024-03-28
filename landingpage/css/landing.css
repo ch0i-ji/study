@@ -1,0 +1,45 @@
+body {
+  max-width: 1536px;
+  width: 100%;
+}
+.mainvisual {
+  width: 80%;
+  height: 400px;
+  border: 1px solid red;
+  /* color: white; */
+  padding: 2% 5%;
+}
+
+.mainvisual > h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 3;
+}
+.mainvisual > p {
+  text-wrap: wrap;
+  line-height: 1.25;
+}
+
+.mainvisual > a {
+  background-color: rgb(102, 101, 101);
+  padding: 10px 15px 10px 15px;
+  border-radius: 5px;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px transparent;
+  position: relative;
+  top: 8%;
+}
+
+.mainvisual > div {
+  width: 40%;
+  height: 100%;
+  border: 1px solid salmon;
+  /* background-image: url(../img/iphone.png); */
+  object-fit: contain;
+}
+.mainvisual > div > img {
+  width: 100%;
+  height: ;
+}
