@@ -4,20 +4,22 @@ body {
 }
 .mainvisual {
   width: 100%;
-  height: 400px;
+  height: 550px;
   background: linear-gradient(to bottom, #3eacdf, #5765b6);
   padding: 3% 7%;
   overflow: hidden;
   color: white;
 }
-
+.mainvisual-text {
+  float: left;
+  margin-top: 50px;
+}
 .mainvisual > h2 {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 3;
 }
 .mainvisual > p {
-  text-wrap: wrap;
   line-height: 1.25;
 }
 
@@ -32,12 +34,14 @@ body {
   position: relative;
   top: 8%;
 }
-
+.abutton:hover {
+  background-color: orange;
+  transition: 0.3s;
+}
 .mainvisual > div {
-  width: 280px;
-  position: absolute;
-  left: 60%;
-  top: 95.5px;
+  width: 350px;
+  float: right;
+  margin-top: 50px;
 }
 .mainvisual > div > img {
   width: 100%;
@@ -107,10 +111,73 @@ body {
   border-radius: 50%;
 }
 
+/* portfolio section */
+
+.portfolio {
+  padding: 3%;
+}
+.portfolio > p,
+.portfolio > h3 {
+  text-align: center;
+}
+.portfolio > p {
+  font-weight: 300;
+  font-size: 0.65rem;
+}
+.portfolio > h3 {
+  font-weight: 600;
+}
+
+.portfolio-con {
+  text-align: left;
+  margin: 1.5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-con div {
+  width: 50%;
+  height: 20rem;
+  color: white;
+  padding: 3%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.portfolio-con div:hover {
+  border: 30px solid white;
+  transition: 0.3s;
+}
+
+.portfolio-con div > strong {
+  font-weight: 500;
+  font-size: 1.18rem;
+  line-height: 5;
+}
+.portfolio-con div > p {
+  font-weight: 300;
+  font-size: 0.95rem;
+}
+.port-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0)),
+    url(../img/portfolio-1.jpg);
+}
+.port-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0)),
+    url(../img/portfolio-2.jpg);
+}
+.port-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0)),
+    url(../img/portfolio-3.jpg);
+}
+.port-4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0)),
+    url(../img/portfolio-4.jpg);
+}
+
 /* footer */
 footer {
   text-align: center;
-  padding: 5%;
 }
 .socialcon {
   color: white;
