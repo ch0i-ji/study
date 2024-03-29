@@ -3,16 +3,17 @@ body {
   width: 100%;
 }
 .mainvisual {
-  width: 80%;
+  width: 100%;
   height: 400px;
-  border: 1px solid red;
-  /* color: white; */
-  padding: 2% 5%;
+  background: linear-gradient(to bottom, #3eacdf, #5765b6);
+  padding: 3% 7%;
+  overflow: hidden;
+  color: white;
 }
 
 .mainvisual > h2 {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 3;
 }
 .mainvisual > p {
@@ -21,7 +22,7 @@ body {
 }
 
 .mainvisual > a {
-  background-color: rgb(102, 101, 101);
+  background-color: rgb(71, 71, 71);
   padding: 10px 15px 10px 15px;
   border-radius: 5px;
   color: white;
@@ -33,13 +34,12 @@ body {
 }
 
 .mainvisual > div {
-  width: 40%;
-  height: 100%;
-  border: 1px solid salmon;
-  /* background-image: url(../img/iphone.png); */
-  object-fit: contain;
+  width: 280px;
+  position: absolute;
+  left: 60%;
+  top: 95.5px;
 }
 .mainvisual > div > img {
   width: 100%;
-  height: ;
+  object-fit: contain;
 }
