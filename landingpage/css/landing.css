@@ -96,11 +96,29 @@ body {
   font-weight: 300;
   font-size: 0.9rem;
 }
-.offericon {
+.offercon {
   color: #5765b6;
   background-color: white;
-  border: 1px solid white;
-  border-radius: 50%;
   padding: 1.15rem;
   margin: 0;
+}
+.icon {
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  padding: 5%;
+}
+.socialcon {
+  color: white;
+  background-color: #5765b6;
+  padding: 1rem;
+  margin: 1%;
+}
+footer > p {
+  font-size: 0.8rem;
+  margin: 2%;
 }
