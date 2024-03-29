@@ -72,7 +72,7 @@ body {
   text-align: center;
   background-color: #5765b6;
   color: white;
-  height: 280px;
+  height: 300px;
   padding: 3% 7%;
 }
 .service > p {
@@ -81,11 +81,11 @@ body {
 }
 .offer-con {
   display: flex;
-  justify-content: space-between;
-  margin: 4% 2%;
+  justify-content: space-evenly;
+  margin: 2.5% 1%;
 }
 .offer-con div {
-  margin: 1%;
+  margin: 0.5%;
 }
 .offer-con strong {
   font-weight: 500;
