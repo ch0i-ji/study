@@ -1,10 +1,40 @@
 // 변수설정 //
-$메인칼라: #2a4cb2;
+$초록: #0aeb3b;
+$빨강: #eb0808;
+$파랑: #301bf0;
 
-.box {
-  width: 100%;
+.divcon {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
 }
 
-.background {
-  background-color: $메인칼라;
+.reddiv {
+  background-color: $빨강;
+  @extend .divcon;
+}
+.greendiv {
+  background-color: $초록;
+  @extend .divcon;
+}
+
+.bluediv {
+  background-color: $파랑;
+  @extend .divcon;
+}
+
+ul {
+  > li {
+    list-style-type: none;
+    padding: 2rem;
+    margin: auto;
+    width: 50%;
+
+    border: 1px solid gray;
+    color: black;
+  }
+}
+.active {
+  background-color: rgb(127, 136, 255);
+  color: white;
 }

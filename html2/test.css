@@ -1,7 +1,31 @@
-.box {
-  width: 100%;
+.divcon, .bluediv, .greendiv, .reddiv {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
 }
 
-.background {
-  background-color: #2a4cb2;
+.reddiv {
+  background-color: #eb0808;
+}
+
+.greendiv {
+  background-color: #0aeb3b;
+}
+
+.bluediv {
+  background-color: #301bf0;
+}
+
+ul > li {
+  list-style-type: none;
+  padding: 2rem;
+  margin: auto;
+  width: 50%;
+  border: 1px solid gray;
+  color: black;
+}
+
+.active {
+  background-color: rgb(127, 136, 255);
+  color: white;
 }/*# sourceMappingURL=test.css.map */
