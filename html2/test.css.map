@@ -1,1 +1,10 @@
-{"version":3,"sources":["test.scss","test.css"],"names":[],"mappings":"AAKA;EACE,YAAA;EACA,aAAA;EACA,aAAA;ACJF;;ADOA;EACE,yBAVG;ACML;;ADOA;EACE,yBAfG;ACWL;;ADQA;EACE,yBAlBG;ACaL;;ADUE;EACE,qBAAA;EACA,aAAA;EACA,YAAA;EACA,UAAA;EAEA,sBAAA;EACA,YAAA;ACRJ;;ADWA;EACE,oCAAA;EACA,YAAA;ACRF","file":"test.css"}
+{
+  "version": 3,
+  "sources": [
+    "test.scss",
+    "test.css"
+  ],
+  "names": [],
+  "mappings": "AAKA;EACE,YAAA;EACA,aAAA;EACA,aAAA;ACJF;;ADOA;EACE,yBAVG;ACML;;ADOA;EACE,yBAfG;ACWL;;ADQA;EACE,yBAlBG;ACaL;;ADUE;EACE,qBAAA;EACA,aAAA;EACA,YAAA;EACA,UAAA;EAEA,sBAAA;EACA,YAAA;ACRJ;;ADWA;EACE,oCAAA;EACA,YAAA;ACRF",
+  "file": "test.css"
+}
