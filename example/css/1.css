@@ -132,7 +132,7 @@ body {
     transform: skew(-20deg);
   }
   80% {
-    transform: translate(-20px);
+    transform: translate(-5px);
   }
   100% {
     transform: translate(0px);
