@@ -1,0 +1,71 @@
+.ani-text:hover {
+  animation-name: 비트는글;
+  animation-duration: 1s;
+}
+@keyframes 비트는글 {
+  0% {
+    transform: skew(0);
+  }
+  30% {
+    transform: skew(20deg);
+  }
+  60% {
+    transform: skew(60deg);
+  }
+  90% {
+    transform: skew(-20deg);
+  }
+  100% {
+    transform: skew(0);
+  }
+}
+
+.shakebt {
+  background-color: teal;
+  border: none;
+  border-radius: 3px;
+  color: white;
+}
+.shakebt:hover {
+  animation-name: 흔들버튼;
+  animation-duration: 0.5s;
+}
+@keyframes 흔들버튼 {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  90% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0px);
+  }
+}
+
+.fa-plus:hover {
+  animation-name: 햄버거움직임;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes 햄버거움직임 {
+  0% {
+    transform: rotate(0);
+  }
+  45% {
+    transform: rotate(-30deg);
+  }
+  60% {
+    transform: rotate(50deg) scale(123%);
+  }
+
+  100% {
+    transform: rotate(45deg) scale(120%);
+  }
+}
