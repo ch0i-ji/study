@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
 .ani-text:hover {
   animation-name: 비트는글;
   animation-duration: 1s;
@@ -67,5 +71,70 @@
 
   100% {
     transform: rotate(45deg) scale(120%);
+  }
+}
+
+.blackbox {
+  color: white;
+  width: 300px;
+  height: 1000px;
+  background-color: black;
+  padding: 20px;
+  transform: translate(-250px);
+}
+
+.blackbox:hover {
+  animation-name: 박스움직임;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes 박스움직임 {
+  0% {
+    transform: translate(-250px);
+  }
+  50% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(-10px);
+  }
+}
+.blackbox .menu {
+  display: flex;
+  justify-content: right;
+}
+.blackbox:hover .menu {
+  justify-content: center;
+}
+.blackbox:hover .item {
+  animation-name: 아이템비틀기;
+  animation-duration: 1s;
+}
+.blackbox .item {
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes 아이템비틀기 {
+  0% {
+    transform: translate(20px);
+  }
+
+  20% {
+    transform: skew(20deg);
+  }
+
+  40% {
+    transform: skew(0deg);
+  }
+
+  60% {
+    transform: skew(-20deg);
+  }
+  80% {
+    transform: translate(-20px);
+  }
+  100% {
+    transform: translate(0px);
   }
 }
